@@ -26,7 +26,7 @@ export default function LuckyNumberList() {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-2 mx-auto max-w-6xl ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 pl-2 pr-2 pt-4 mx-auto max-w-6xl  bg-gray-100">
       {items.map((item) => (
         <ContentItem
           key={item.slug}
