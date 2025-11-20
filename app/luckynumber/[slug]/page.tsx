@@ -54,7 +54,7 @@ export default function LuckyNumberDetail() {
             }
           />
           <div>
-            <p className="text-gray-800 dark:text-gray-200">{content.description}</p>
+            <p className="text-black">{content.description}</p>
           </div>
         </div>
       </div>
