@@ -48,7 +48,7 @@ export default function SideNav() {
       </header>
 
       {/* Mobile */}
-      <nav className="fixed left-0 top-20 h-[calc(100vh-64px)] w-24 bg-grey-100 shrink-0 p-2 border-r z-10 lg:hidden mt-4 min-h-screen">
+      <nav className="fixed left-0 top-20 h-[calc(100vh-64px)] w-24 bg-grey-100 shrink-0 p-2 border-r z-10 lg:hidden mt-4">
         <div className="flex flex-col items-center space-y-1">
           {tabs.map((t) => (
             <SideNavItem
