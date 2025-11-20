@@ -41,19 +41,22 @@ export default function LuckyNumberDetail() {
     );
 
   return (
-    <div className="max-w-3xl mx-auto p-4 items-center  bg-gray-100">
-
-      <img
-        src={content.luckyImageUrl}
-        alt={content.title}
-        className="h-auto max-w-full object-contain mb-4 mx-auto block"
-        onError={(e) =>
-        (e.currentTarget.src =
-          "https://placehold.co/400x300/eeeeee/999999?text=No+Image")
-        }
-      />
-      <div>
-        <p className="text-gray-800 dark:text-gray-200">{content.description}</p>
+    <div className="bg-gray-100 min-h-screen flex justify-center">
+      <div className="bg-gray-100 min-h-screen lg:min-w-screen flex justify-center">
+        <div className="max-w-3xl w-full p-4 bg-gray-100">
+          <img
+            src={content.luckyImageUrl}
+            alt={content.title}
+            className="h-auto max-w-full object-contain mb-4 mx-auto block"
+            onError={(e) =>
+            (e.currentTarget.src =
+              "https://placehold.co/400x300/eeeeee/999999?text=No+Image")
+            }
+          />
+          <div>
+            <p className="text-gray-800 dark:text-gray-200">{content.description}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

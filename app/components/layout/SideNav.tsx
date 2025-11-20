@@ -33,8 +33,8 @@ export default function SideNav() {
   return (
     <div className="bg-gray-50 mb-11">
       {/* Desktop */}
-      <header className="hidden lg:block w-full bg-gray-100 border-b shadow-md top-0 z-20 mt-24 fixed">
-        <div className="max-w-7xl mx-auto flex items-center space-x-6 p-4">
+      <header className="hidden lg:block w-full bg-gray-100 border-b shadow-md top-0 z-20 mt-24 fixed ">
+        <div className="max-w-7xl mx-auto flex items-center space-x-6 p-4 ">
           {tabs.map((t) => (
             <SideNavItem
               key={t.id}
