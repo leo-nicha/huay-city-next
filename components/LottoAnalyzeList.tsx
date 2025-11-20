@@ -1,28 +1,22 @@
 "use client";
 
+import ContentItem from "@/app/components/cards/ContentItem";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import ContentItem from "../components/cards/ContentItem";
 
-interface LuckyNumberItem {
-  title: string;
-  slug: string;
-  subtitle: string;
-  imageUrl: string;
+interface LottoAnalyzeItem {
+title: string;
+    slug: string;
+    subtitle: string;
+    imageUrl: string;
+    description: string;
+    luckyImageUrl: string;
 }
 
-export default function LuckyNumberList() {
+export default function LottoAnalyzeList({ items }: { items: LottoAnalyzeItem[] }) {
   const router = useRouter();
-  const [items, setItems] = useState<LuckyNumberItem[]>([]);
-
-  useEffect(() => {
-    import("../../data/luckynumber.json")
-      .then((module) => setItems(module.default))
-      .catch((err) => console.error("Failed to load JSON:", err));
-  }, []);
 
   const handleItemClick = (slug: string) => {
-    router.push(`/luckynumber/${slug}`);
+    router.push(`/lottoanalyze/${slug}`);
   };
 
   return (

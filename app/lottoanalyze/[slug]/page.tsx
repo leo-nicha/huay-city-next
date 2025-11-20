@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLuckyNumberBySlug } from "@/lib/getLuckyNumber";
+import { getLottoAnalyzeBySlug } from "@/lib/getLottoAnalyze";
 
-interface LuckyNumberItem {
+interface LottoAnalyzeItem {
   title: string;
   subtitle: string;
   description: string;
   luckyImageUrl: string;
 }
 
-export default function LuckyNumberDetail() {
+export default function LottoAnalyzeDetail() {
   const { slug } = useParams();
-  const [content, setContent] = useState<LuckyNumberItem | null>(null);
+  const [content, setContent] = useState<LottoAnalyzeItem | null>(null);
 
   useEffect(() => {
-    const item = getLuckyNumberBySlug(slug as string);
+    const item = getLottoAnalyzeBySlug(slug as string);
     setContent(item);
   }, [slug]);
 

@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLuckyNumberBySlug } from "@/lib/getLuckyNumber";
+import { getLottoEnvelopeBySlug } from "@/lib/getLottoEnvelopeList";
 
-interface LuckyNumberItem {
+interface LottoEnvelopeItem {
   title: string;
   subtitle: string;
   description: string;
   luckyImageUrl: string;
 }
 
-export default function LuckyNumberDetail() {
+export default function LottoAnalyzeDetail() {
   const { slug } = useParams();
-  const [content, setContent] = useState<LuckyNumberItem | null>(null);
+  const [content, setContent] = useState<LottoEnvelopeItem | null>(null);
 
   useEffect(() => {
-    const item = getLuckyNumberBySlug(slug as string);
+    const item = getLottoEnvelopeBySlug(slug as string);
     setContent(item);
   }, [slug]);
 

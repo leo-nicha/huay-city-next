@@ -1,10 +1,8 @@
-"use client";
-import LuckyNumberList from "../components/LuckyNumberList";
+import LuckyNumberList from "@/components/LuckyNumberList";
+import { getAllLuckyNumber } from "@/lib/getLuckyNumber";
 
 export default function LuckyNumberPage() {
-  return (
-    <div>
-      <LuckyNumberList />
-    </div>
-  );
+  const items = getAllLuckyNumber();
+
+  return <LuckyNumberList items={items} />;
 }
