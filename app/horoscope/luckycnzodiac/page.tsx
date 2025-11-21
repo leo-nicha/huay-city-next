@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Loader2, Sparkles } from "lucide-react";
 import { Card, Button } from "flowbite-react";
@@ -71,7 +73,7 @@ const ChineseZodiac: React.FC = () => {
 
   return (
     <div
-      className={`min-h-screen transition-all duration-700 bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans relative mt-12`}
+      className={`min-h-screen transition-all duration-700 bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans`}
     >
 
       {/* หัวข้อ */}

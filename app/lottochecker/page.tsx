@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from "react";
 import { Loader2, Search } from "lucide-react";
 
@@ -29,7 +31,7 @@ interface LottoResult {
   };
 }
 
-const LottoChecker: React.FC = () => {
+export default function LottoChecker() {
   const [allResults, setAllResults] = useState<LottoResult[]>([]);
   const [selectedDate, setSelectedDate] = useState<string>("");
   const [lottoNumber, setLottoNumber] = useState("");
@@ -106,7 +108,7 @@ const LottoChecker: React.FC = () => {
   const resultData = allResults.find(r => r.date === selectedDate);
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-25 px-4 pb-10">
+    <div className="w-full max-w-6xl mx-auto mt-5 px-4 pb-10">
 
       {/* Header */}
       <h1 className="text-xl md:text-4xl font-extrabold text-purple-800 text-center mb-6">
@@ -238,5 +240,3 @@ const PrizeSection = ({ title, amount, list }: { title: string; amount: string; 
     </div>
   </div>
 );
-
-export default LottoChecker;

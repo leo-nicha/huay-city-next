@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* SideNav จะอยู่ด้านบนของ main */}
           <SideNav />
 
-          <main className="flex-1 overflow-y-auto pl-24 lg:max-w-6xl lg:mx-auto lg:p-8 flex flex-col mt-12 lg:mt-25">
+          <main className="flex-1 overflow-y-auto pl-24 lg:p-8 flex flex-col mt-12 lg:mt-25">
             {children}
           </main>
         </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Loader2, Calendar } from "lucide-react";
 import { Card, Button } from "flowbite-react";
@@ -84,8 +86,8 @@ const LuckyDays: React.FC = () => {
 
     return (
         <div
-            className={`min-h-screen transition-colors duration-700 bg-linear-to-b ${themeColors[day] || "from-yellow-50 to-white"
-                } flex flex-col items-center p-4 font-sans relative mt-12`}
+            className={`w-full max-w-6xl mx-auto mt-5 px-4 pb-10 min-h-screen transition-colors duration-700 bg-linear-to-b ${themeColors[day] || "from-yellow-50 to-white"
+                } flex flex-col items-center font-sans`}
         >
             {/* หัวข้อ */}
             <header className="text-center mt-12 mb-6 w-full">
@@ -97,7 +99,7 @@ const LuckyDays: React.FC = () => {
 
             {/* ตัวเลือกวันเกิด */}
 
-            <div className="grid grid-cols-2 sm:grid-cols-3  gap-3 mb-6 w-full lg:max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 w-full lg:max-w-4xl mx-auto">
                 {days.map((d, index) => {
                     if (index === days.length - 1) {
                         return (
@@ -106,10 +108,10 @@ const LuckyDays: React.FC = () => {
                                 className="col-span-2 sm:col-span-3 flex justify-center"
                             >
                                 <Card
-                                    className={`w-[50%] sm:w-1/3 cursor-pointer text-center p-3 rounded-2xl border-2 transition-all duration-300
+                                    className={`w-[50%] sm:w-1/3 cursor-pointer text-center p-3 rounded-2xl border-2  duration-300
               ${day === d.value
                                             ? `${dayThemes[d.value].border} ${dayThemes[d.value].bg} shadow-lg scale-105`
-                                    : `border-transparent ${dayThemes[d.value].hover}`}
+                                            : `border-transparent ${dayThemes[d.value].hover}`}
             `}
                                     onClick={() => setDay(d.value)}
                                 >
@@ -140,7 +142,7 @@ const LuckyDays: React.FC = () => {
                 onClick={handleSubmit}
                 disabled={loading}
                 color="warning"
-                className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-gray-200 h-12"
+                className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-gray-200 h-12 "
             >
                 {loading ? (
                     <>

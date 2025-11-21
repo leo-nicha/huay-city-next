@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useCallback } from "react";
 import { Loader2, Search } from "lucide-react";
 
@@ -51,10 +53,11 @@ const DreamAnimal: React.FC = () => {
   }, [query]);
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans relative mt-12">
+    
+    <div className="w-full max-w-6xl  bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
       
-      <header className="text-center mt-12 mb-6 w-full">
-        <h1 className="text-3xl font-extrabold text-amber-700 font-serif">
+      <header className="text-center mt-5 mb-6 w-full">
+        <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 text-center mb-6">
           ทำนายฝันเห็นสัตว์
         </h1>
         <p className="text-sm text-gray-500">
@@ -108,7 +111,7 @@ const DreamAnimal: React.FC = () => {
           <div className="flex flex-col gap-4">
             {results.map((item) => (
               <div
-                key={item.id}
+                key={item.dream}
                 className="bg-white rounded-2xl shadow-md p-5 border border-amber-200 text-center"
               >
                 <h2 className="text-xl font-bold text-amber-800 mb-2">

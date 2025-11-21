@@ -5,7 +5,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white justify-center shadow-sm shrink-0 w-full fixed ">
+    <header className="bg-white justify-center shadow-sm shrink-0 w-full fixed z-50">
       <nav className="p-3 flex justify-center">
         <h1 className="text-3xl font-bold text-gray-800">HUAY (Test)</h1>
         <div></div>

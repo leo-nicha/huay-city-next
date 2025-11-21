@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Loader2, Sparkles } from "lucide-react";
 import { Card, Button } from "flowbite-react";
@@ -71,19 +73,10 @@ const WesternZodiac: React.FC = () => {
     };
 
     return (
-        <div
-            className="min-h-screen bg-linear-to-b from-indigo-50 to-white flex flex-col items-center p-4 font-sans relative transition-all duration-700 mt-12"
-            style={{
-                // backgroundImage: `url("/zodiac/zodiac_bg.jpg")`,
-                backgroundSize: "cover",   
-                backgroundPosition: "center", 
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
-            }}
-        >
+        <div className="w-full max-w-6xl  bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
             {/* หัวข้อ */}
-            <header className="text-center mt-12 mb-6 w-full">
-                <h1 className="text-3xl font-extrabold text-amber-700 font-serif mb-2">
+            <header className="text-center mb-6 w-full">
+                <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 font-serif mb-2">
                     ดูดวง 12 ราศี
                 </h1>
                 <p className="text-sm text-gray-500">เลือกราศีของคุณเพื่อดูคำทำนาย</p>
@@ -99,25 +92,25 @@ const WesternZodiac: React.FC = () => {
                                 ? "border-indigo-500 bg-indigo-100 shadow-lg scale-105"
                                 : "border-transparent hover:border-indigo-300"
                             }
-      `}
+    `}
                         onClick={() => setZodiac(z.key)}
                         style={
                             z.imageUrl
                                 ? {
                                     backgroundImage: `url(${z.imageUrl})`,
-                                    backgroundSize: "100% 98%",
+                                    backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }
                                 : {}
                         }
                     >
-                        {/* overlay โปร่งใส */}
+                        {/* overlay โปร่งใส ครอบเต็ม */}
                         {z.imageUrl && (
-                            <div className="absolute inset-0 bg-white/80 backdrop-blur-[1px]" />
+                            <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
                         )}
 
                         {/* เนื้อหาการ์ด */}
-                        <div className="relative z-10 flex flex-col items-center justify-center">
+                        <div className="relative flex flex-col items-center justify-center">
                             <p className="text-3xl text-white drop-shadow-md">{z.emoji}</p>
                             <p
                                 className="font-bold text-sm whitespace-pre-line leading-tight text-center drop-shadow-md"
