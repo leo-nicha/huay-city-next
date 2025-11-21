@@ -73,13 +73,13 @@ const WesternZodiac: React.FC = () => {
     };
 
     return (
-        <div className="w-full max-w-6xl  bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
+        <div className="w-full max-w-6xl bg-linear-to-b from-blue-950 to-blue-500 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
             {/* หัวข้อ */}
             <header className="text-center mb-6 w-full">
-                <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 font-serif mb-2">
+                <h1 className="text-xl md:text-4xl font-extrabold text-amber-300 font-serif mb-2">
                     ดูดวง 12 ราศี
                 </h1>
-                <p className="text-sm text-gray-500">เลือกราศีของคุณเพื่อดูคำทำนาย</p>
+                <p className="text-sm text-gray-200">เลือกราศีของคุณเพื่อดูคำทำนาย</p>
             </header>
 
             {/* ตัวเลือกราศี */}
@@ -87,10 +87,10 @@ const WesternZodiac: React.FC = () => {
                 {zodiacs.map((z) => (
                     <Card
                         key={z.key}
-                        className={`h-30 relative cursor-pointer text-center py-3 rounded-2xl border-2 overflow-hidden transition-all duration-300 flex flex-col justify-center items-center bg-amber-200
+                        className={`h-30 relative cursor-pointer text-center py-3 rounded-2xl border-2 overflow-hidden transition-all duration-300 flex flex-col justify-center items-center bg-amber-500
         ${zodiac === z.key
-                                ? "border-indigo-500 bg-indigo-100 shadow-lg scale-105"
-                                : "border-transparent hover:border-indigo-300"
+                                ? "border-indigo-900 bg-indigo-100 shadow-lg scale-105"
+                                : "border-transparent hover:border-indigo-500"
                             }
     `}
                         onClick={() => setZodiac(z.key)}
@@ -128,7 +128,7 @@ const WesternZodiac: React.FC = () => {
                 onClick={handleSubmit}
                 disabled={loading}
                 color="info"
-                className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-gray-200 h-12"
+                className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-amber-200 h-12"
             >
                 {loading ? (
                     <>

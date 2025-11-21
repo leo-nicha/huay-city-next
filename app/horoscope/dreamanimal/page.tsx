@@ -53,11 +53,11 @@ const DreamAnimal: React.FC = () => {
   }, [query]);
 
   return (
-    
+
     <div className="w-full max-w-6xl  bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
-      
-      <header className="text-center mt-5 mb-6 w-full">
-        <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 text-center mb-6">
+
+      <header className="text-center mb-6 w-full">
+        <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 font-serif mb-2">
           ทำนายฝันเห็นสัตว์
         </h1>
         <p className="text-sm text-gray-500">
@@ -66,38 +66,38 @@ const DreamAnimal: React.FC = () => {
       </header>
 
       {/* ช่องค้นหา */}
-<div className="w-full sm:max-w-xs flex items-center gap-2 mb-6 mx-auto">
-  <input
-    type="text"
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-    onFocus={() => setIsFocused(true)}
-    onBlur={() => setIsFocused(false)}
-    placeholder={isFocused ? "" : "สัตว์ในฝันของคุณ"}
-    className="w-full px-4 py-3 border border-amber-300 rounded-full text-center text-lg text-gray-800 shadow-sm
+      <div className="w-full sm:max-w-xs flex items-center gap-2 mb-6 mx-auto">
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+          placeholder={isFocused ? "" : "สัตว์ในฝันของคุณ"}
+          className="w-full px-4 py-3 border border-amber-300 rounded-full text-center text-lg text-gray-800 shadow-sm
                focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all"
-  />
+        />
 
-  <button
-    onClick={handleSearch}
-    disabled={loading || !query.trim()}
-    className={`flex items-center justify-center px-4 py-3 rounded-full font-bold transition-all duration-300
+        <button
+          onClick={handleSearch}
+          disabled={loading || !query.trim()}
+          className={`flex items-center justify-center px-4 py-3 rounded-full font-bold transition-all duration-300
                 shadow-md active:scale-95
                 ${loading || !query.trim()
-                  ? "bg-gray-400 text-white cursor-not-allowed"
-                  : "bg-amber-600 text-white hover:bg-amber-700"
-                }`}
-  >
-    {loading ? (
-      <Loader2 className="w-5 h-5 animate-spin" />
-    ) : (
-      <>
-        <Search className="w-5 h-5 mr-1" />
-        ค้นหา
-      </>
-    )}
-  </button>
-</div>
+              ? "bg-gray-400 text-white cursor-not-allowed"
+              : "bg-amber-600 text-white hover:bg-amber-700"
+            }`}
+        >
+          {loading ? (
+            <Loader2 className="w-5 h-5 animate-spin" />
+          ) : (
+            <>
+              <Search className="w-5 h-5 mr-1" />
+              ค้นหา
+            </>
+          )}
+        </button>
+      </div>
 
       {/* แสดงผล */}
       <main className="w-full flex justify-center">
@@ -124,8 +124,8 @@ const DreamAnimal: React.FC = () => {
 
                 <p
                   className={`font-semibold mb-2 ${item.luck.includes("ดี")
-                      ? "text-green-700"
-                      : "text-red-600"
+                    ? "text-green-700"
+                    : "text-red-600"
                     }`}
                 >
                   ประเภทของฝัน: {item.luck}

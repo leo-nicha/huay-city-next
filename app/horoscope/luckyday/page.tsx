@@ -86,12 +86,12 @@ const LuckyDays: React.FC = () => {
 
     return (
         <div
-            className={`w-full max-w-6xl mx-auto mt-5 px-4 pb-10 min-h-screen transition-colors duration-700 bg-linear-to-b ${themeColors[day] || "from-yellow-50 to-white"
-                } flex flex-col items-center font-sans`}
+            className={`w-full max-w-6xl  bg-linear-to-b flex flex-col items-center p-4 font-sans mx-auto min-h-screen ${themeColors[day] || "from-yellow-50 to-white"
+                }`}
         >
             {/* หัวข้อ */}
-            <header className="text-center mt-12 mb-6 w-full">
-                <h1 className="text-3xl font-extrabold text-yellow-700 font-serif mb-2">
+            <header className="text-center mb-6 w-full">
+                <h1 className="text-xl md:text-4xl font-extrabold text-amber-700 font-serif mb-2">
                     ดูดวงวันเกิดของคุณ
                 </h1>
                 <p className="text-sm text-gray-500">เลือกวันเกิดและกด "ดูคำทำนาย"</p>
@@ -99,7 +99,7 @@ const LuckyDays: React.FC = () => {
 
             {/* ตัวเลือกวันเกิด */}
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 w-full lg:max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-3  gap-3 mb-6 w-full lg:max-w-3xl mx-auto">
                 {days.map((d, index) => {
                     if (index === days.length - 1) {
                         return (

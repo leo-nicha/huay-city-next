@@ -72,13 +72,11 @@ const ChineseZodiac: React.FC = () => {
   };
 
   return (
-    <div
-      className={`min-h-screen transition-all duration-700 bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans`}
-    >
+    <div className="w-full max-w-6xl  bg-linear-to-b from-red-200 to-red-50 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
 
       {/* หัวข้อ */}
-      <header className="text-center mt-12 mb-6 w-full">
-        <h1 className="text-3xl font-extrabold text-amber-700 font-serif mb-2">
+      <header className="text-center mb-6 w-full">
+        <h1 className="text-xl md:text-4xl font-extrabold text-red-700 font-serif mb-2">
           ดูดวง 12 ปีนักษัตรจีน
         </h1>
         <p className="text-sm text-gray-500">เลือกปีนักษัตรของคุณเพื่อดูคำทำนาย</p>
@@ -89,10 +87,10 @@ const ChineseZodiac: React.FC = () => {
         {zodiacs.map((z) => (
           <Card
             key={z.key}
-            className={`h-30 cursor-pointer text-center py-3 rounded-2xl border-2 transition-all duration-300 
+            className={`h-30 relative cursor-pointer text-center py-3 rounded-2xl border-2 overflow-hidden transition-all duration-300 flex flex-col justify-center items-center bg-white
               ${zodiac === z.key
-                ? "border-amber-500 bg-amber-50 shadow-lg scale-105"
-                : "border-transparent hover:border-amber-300"}
+                ? "border-red-500 bg-amber-50 shadow-lg scale-105"
+                : "border-transparent hover:border-red-300"}
             `}
             onClick={() => setZodiac(z.key)}
           >
@@ -107,7 +105,7 @@ const ChineseZodiac: React.FC = () => {
         onClick={handleSubmit}
         disabled={loading}
         color="warning"
-        className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-gray-200 h-12"
+        className="w-full max-w-xs mb-6 font-bold rounded-full text-md bg-red-400 h-12"
       >
         {loading ? (
           <>
@@ -131,8 +129,8 @@ const ChineseZodiac: React.FC = () => {
         )}
 
         {!loading && !error && result && (
-          <div className="bg-white rounded-2xl shadow-md p-5 border border-amber-200 max-w-md w-full text-left">
-            <h2 className="text-xl font-bold text-amber-700 mb-2 text-center">
+          <div className="bg-white rounded-2xl shadow-md p-5 border border-red-200 max-w-md w-full text-left">
+            <h2 className="text-xl font-bold text-red-700 mb-2 text-center">
               {result.zodiac_ch} ({result.zodiac_th})
             </h2>
             <p className="text-center text-gray-600 mb-4">
