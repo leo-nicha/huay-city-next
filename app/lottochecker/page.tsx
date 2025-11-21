@@ -108,7 +108,7 @@ export default function LottoChecker() {
   const resultData = allResults.find(r => r.date === selectedDate);
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-5 px-4 pb-10">
+    <div className="w-full max-w-6xl mx-auto mt-5 px-4 pb-10 bg-gray-100">
 
       {/* Header */}
       <h1 className="text-xl md:text-4xl font-extrabold text-purple-800 text-center mb-6">
