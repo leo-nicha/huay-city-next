@@ -6,10 +6,17 @@ import ContentItem from "../components/cards/ContentItem";
 
 const HoroscopeList: React.FC = () => {
   const items = [
+    { title: "ดวงรายวัน", subtitle: "ไพ่ที่คุณเลือก จะบอกความจริงให้กับคุณ", slug: 'tarotdaily', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986559/dailytarot_exra5k.jpg" },
+    { title: "ความรัก", subtitle: "คนโสด คนมีคู่ มีคนคุย อกหัก", slug: 'tarotlove', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986560/lovetarot_amdrks.jpg" },
+    { title: "การงาน", subtitle: "เรื่องดีๆ ปัญหา อุปสรรค โอกาส ทางแก้", slug: 'tarotwork', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986556/worktarot_tffntk.jpg" },
+    { title: "การเรียน", subtitle: "การเตรียมตัว การสอบ การปรับปรุง พัฒนา", slug: 'tarotstudy', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986565/studytarot_yltuld.jpg" },
+    { title: "การเงิน", subtitle: "โชคลาภ รายได้ หนี้สิน สภาพคล่อง", slug: 'tarotmoney', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986564/moneytarot_hnwjcp.jpg" },
+    { title: "สุขภาพ", subtitle: "สุขภาพกาย สุขภาพใจ สุขภาพจิต", slug: 'tarothealth', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763986564/healthtarot_bcwdn8.jpg" },
     { title: "วันเกิด", subtitle: "วิเคราะห์นิสัยพื้นฐานและโชคชะตา", slug: 'luckyday', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656155/luckydays_g6zmfl.jpg" },
     { title: "ราศี", subtitle: "ตำแหน่งดาววันเกิด เช่น ราศีเมษ ราศีพฤษภ ฯลฯ", slug: 'luckywestzodiac', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/luckywestzodiac_lfzkby.jpg" },
     { title: "ปีนักษัตร", subtitle: "ปีเกิดตามจันทรคติจีน เช่น ชวด ฉลู ขาล ฯลฯ", slug: 'luckycnzodiac', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656155/luckycnzodiac_lbijok.jpg" },
     { title: "สัตว์ในฝัน", subtitle: "ตีเลข / ทำนายโชคลาภ / เหตุการณ์ล่วงหน้า", slug: 'dreamanimal', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/dreamanimal_solo9b.jpg" },
+    { title: "เซียมซี", subtitle: "เสี่ยงเซียมซีรายสัปดาห์ บอกเรื่องราวในอนาคต", slug: 'fortunesticks', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763751186/fortunesticks_uvbmmk.jpg" },
   ];
 
   const router = useRouter();

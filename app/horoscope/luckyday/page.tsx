@@ -99,7 +99,7 @@ const LuckyDays: React.FC = () => {
 
             {/* ตัวเลือกวันเกิด */}
 
-            <div className="grid grid-cols-2 lg:grid-cols-3  gap-3 mb-6 w-full lg:max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mb-6 w-full lg:max-w-3xl mx-auto">
                 {days.map((d, index) => {
                     if (index === days.length - 1) {
                         return (
@@ -108,7 +108,7 @@ const LuckyDays: React.FC = () => {
                                 className="col-span-2 sm:col-span-3 flex justify-center"
                             >
                                 <Card
-                                    className={`w-[50%] sm:w-1/3 cursor-pointer text-center p-3 rounded-2xl border-2  duration-300
+                                    className={`w-[50%] sm:w-1/3 cursor-pointer text-center p-3 rounded-2xl border-2 transition-all duration-300
               ${day === d.value
                                             ? `${dayThemes[d.value].border} ${dayThemes[d.value].bg} shadow-lg scale-105`
                                             : `border-transparent ${dayThemes[d.value].hover}`}

@@ -9,8 +9,8 @@ interface DreamAnimalData {
   id: number;
   dream: string;
   meaning: string;
-  luck: string; // ดี, เตือน, หรืออื่น ๆ
-  numbers: string[]; // ตัวเลขเสี่ยงโชค
+  luck: string;
+  numbers: string[];
 }
 
 const DreamAnimal: React.FC = () => {
