@@ -3,21 +3,20 @@
 import { useRouter } from "next/navigation";
 import ContentItem from "@/app/components/cards/ContentItem";
 
-interface LottoNewsItem {
-  news: number;
-  header: string;
-  slug: string;
-  imageUrl: string;
+interface LaosLottoItem {
   title: string;
+  slug: string;
   subtitle: string;
-  content: string[];
+  imageUrl: string;
+  description: string;
+  luckyImageUrl: string;
 }
 
-export default function LottoNewsList({ items }: { items: LottoNewsItem[] }) {
+export default function LaosLottoList({ items }: { items: LaosLottoItem[] }) {
   const router = useRouter();
 
   const handleItemClick = (slug: string) => {
-    router.push(`/lottonews/${slug}`);
+    router.push(`/laoslotto/${slug}`);
   };
 
   return (
@@ -28,7 +27,8 @@ export default function LottoNewsList({ items }: { items: LottoNewsItem[] }) {
             <ContentItem
               key={item.slug}
               title={item.title}
-              subtitle={item.subtitle}
+              subtitle={
+                item.subtitle}
               imageUrl={item.imageUrl}
               onClick={() => handleItemClick(item.slug)}
             />

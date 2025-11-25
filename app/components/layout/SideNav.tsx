@@ -9,12 +9,10 @@ import {
 
 const tabs = [
   { id: "luckynumber", icon: <Star />, label: "เลขเด็ด" },
-  { id: "lottostation", icon: <House />, label: "สำนักหวย" },
-  { id: "lottoenvelope", icon: <Mail />, label: "หวยซอง" },
-  { id: "lottoanalyze", icon: <ChartNoAxesCombined />, label: "วิเคราะห์" },
-  { id: "lottodata", icon: <ListOrdered />, label: "ข้อมูลเลข" },
   { id: "lottochecker", icon: <ScanSearch />, label: "ตรวจหวย" },
-  { id: "lottonews", icon: <Tv />, label: "ข่าวหวย" },
+  { id: "laoslotto", icon: <Mail />, label: "หวยลาว" },
+  { id: "hanoilotto", icon: <ChartNoAxesCombined />, label: "ฮานอย" },
+  { id: "yeekeelotto", icon: <ListOrdered />, label: "หวยยี่กี" },
   { id: "horoscope", icon: <Clover />, label: "ดูดวง" },
   { id: "lottoonline", icon: <Globe />, label: "เร็วๆ นี้" }
 ];

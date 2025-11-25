@@ -46,5 +46,45 @@
     "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084772/chinesecalander_vhumca.jpg",
     "description": "",
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084773/chinesecalander011225_qbdllr.jpg"
+  },
+  {
+    "title": "แม่นมาก ขั้นเทพ",
+    "slug": "mannmakkhanthep",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763553104/mannmakkhanthep_kcrhhu.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763552717/mannmakkhanthep011225_ozath5.jpg"
+  },
+  {
+    "title": "แม่น้ำหนึ่ง",
+    "slug": "meanumone",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone_ertkch.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone011225_q6ygo4.jpg"
+  },
+  {
+    "title": "หวยใบแดง",
+    "slug": "huaybaidaeng",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084556/huaybaidaeng_huq6ve.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084555/huaybaidaeng011225_hg0j56.jpg"
+  },
+  {
+    "title": "อาม่าให้ลาภ",
+    "slug": "amahailap",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763554079/amahailap_r5eiew.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763554079/amahailap011225_ggjskx.jpg"
+  },
+  {
+    "title": "เลขกำลังวัน",
+    "slug": "daypowernumber",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562227/lottoanalyze_xgf22b.jpg",
+    "description": "เลขกำลัง ประจำวันจันทร์ 2 - 9 - 1 - 4 - 6 - 5 - 7 - 0 เลขเด่นคือเลข 2 เลขท้าย 2 ตัว 29, 17, 65, 54, 66, 16, 75, 26, 72, 47",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562226/dailypowernumber011225_rwlpnr.jpg"
   }
 ]

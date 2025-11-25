@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLottoAnalyzeBySlug } from "@/lib/getLottoAnalyze";
+import { getLaosLottoBySlug } from "@/lib/getLaosLotto";
 
-interface LottoAnalyzeItem {
+interface LaosLottoItem {
   title: string;
   subtitle: string;
   description: string;
   luckyImageUrl: string;
 }
 
-export default function LottoAnalyzeDetail() {
+export default function LaosLottoDetail() {
   const { slug } = useParams();
-  const [content, setContent] = useState<LottoAnalyzeItem | null>(null);
+  const [content, setContent] = useState<LaosLottoItem | null>(null);
 
   useEffect(() => {
-    const item = getLottoAnalyzeBySlug(slug as string);
+    const item = getLaosLottoBySlug(slug as string);
     setContent(item);
   }, [slug]);
 

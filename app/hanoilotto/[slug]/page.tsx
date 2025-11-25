@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLottoEnvelopeBySlug } from "@/lib/getLottoEnvelopeList";
+import { getHanoiLottoBySlug } from "@/lib/getHanoiLotto";
 
-interface LottoEnvelopeItem {
+interface HanoiLottoItem {
   title: string;
   subtitle: string;
   description: string;
   luckyImageUrl: string;
 }
 
-export default function LottoEnvelopeDetail() {
+export default function HanoiLottoDetail() {
   const { slug } = useParams();
-  const [content, setContent] = useState<LottoEnvelopeItem | null>(null);
+  const [content, setContent] = useState<HanoiLottoItem | null>(null);
 
   useEffect(() => {
-    const item = getLottoEnvelopeBySlug(slug as string);
+    const item = getHanoiLottoBySlug(slug as string);
     setContent(item);
   }, [slug]);
 

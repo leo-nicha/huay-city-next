@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLottoStationBySlug } from "@/lib/getLottoStation";
+import { getYeekeeLottoBySlug } from "@/lib/getYeekeeLotto";
 
-interface LottoStationItem {
+interface YeekeeLottoItem {
   title: string;
   subtitle: string;
   description: string;
   luckyImageUrl: string;
 }
 
-export default function LottoStationDetail() {
+export default function YeekeeLottoDetail() {
   const { slug } = useParams();
-  const [content, setContent] = useState<LottoStationItem | null>(null);
+  const [content, setContent] = useState<YeekeeLottoItem | null>(null);
 
   useEffect(() => {
-    const item = getLottoStationBySlug(slug as string);
+    const item = getYeekeeLottoBySlug(slug as string);
     setContent(item);
   }, [slug]);
 

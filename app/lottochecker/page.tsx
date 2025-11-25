@@ -116,7 +116,7 @@ export default function LottoChecker() {
       </h1>
 
       {/* Input zone */}
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-6 lg:items-center mb-6">
+      <div className="w-full flex flex-col lg:flex-row lg:justify-center lg:gap-6 lg:items-center mb-6">
         <select
           className="w-full max-w-xs px-4 py-3 border rounded-full text-center text-lg text-gray-800 shadow-sm bg-white mb-3 lg:mb-0"
           value={selectedDate}
