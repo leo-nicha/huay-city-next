@@ -17,6 +17,9 @@ const HoroscopeList: React.FC = () => {
     { title: "ปีนักษัตร", subtitle: "ปีเกิดตามจันทรคติจีน เช่น ชวด ฉลู ขาล ฯลฯ", slug: 'luckycnzodiac', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656155/luckycnzodiac_lbijok.jpg" },
     { title: "สัตว์ในฝัน", subtitle: "ตีเลข / ทำนายโชคลาภ / เหตุการณ์ล่วงหน้า", slug: 'dreamanimal', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/dreamanimal_solo9b.jpg" },
     { title: "เซียมซี", subtitle: "เสี่ยงเซียมซีรายสัปดาห์ บอกเรื่องราวในอนาคต", slug: 'fortunesticks', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763751186/fortunesticks_uvbmmk.jpg" },
+    { title: "อักษรรูน", subtitle: "ศาสตร์โบราณทำนาย อดีต ปัจจุบัน อนาคต", slug: 'runestone', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/runestone_cwsw4b.jpg" },
+    { title: "เบอร์มงคล", subtitle: "หลักเลขศาสตร์ ดวงดาว และโหราศาสตร์ ", slug: 'numberphone', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/phonenumber_cuhqns.jpg" },
+    { title: "บ้านเลขที่", subtitle: "ห้องมงคล บ้านมงคล ตามหลักโหราศาสตร์ไทย", slug: 'numberhouse', imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763656154/housenumber_rdmxxg.jpg" },
   ];
 
   const router = useRouter();

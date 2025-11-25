@@ -140,10 +140,10 @@ const TarotWork: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  }, [hasDrawnToday, startCountdown]); 
+  }, [hasDrawnToday, startCountdown]);
 
   return (
-<div className="w-full max-w-6xl bg-linear-to-b from-slate-300 to-slate-100 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
+    <div className="w-full max-w-6xl bg-linear-to-b from-slate-300 to-slate-100 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
       <header className="text-center mb-6 w-full">
         <h1 className="text-xl md:text-4xl font-extrabold text-slate-700 font-serif mb-2">
           ไพ่ทำนายการงาน
@@ -155,11 +155,10 @@ const TarotWork: React.FC = () => {
       <button
         onClick={fetchWorkCard}
         disabled={loading || hasDrawnToday}
-        className={`flex items-center justify-center w-full max-w-xs px-6 py-3 mb-6 rounded-full text-base font-bold transition-all duration-300 shadow-md active:scale-95 ${
-          loading || hasDrawnToday
+        className={`flex items-center justify-center w-full max-w-xs px-6 py-3 mb-6 rounded-full text-base font-bold transition-all duration-300 shadow-md active:scale-95 ${loading || hasDrawnToday
             ? "bg-gray-400 text-white cursor-not-allowed"
-            : "bg-amber-600 text-white hover:bg-amber-700"
-        }`}
+            : "bg-slate-600 text-white hover:bg-slate-700"
+          }`}
       >
         {loading ? (
           <>
@@ -190,11 +189,11 @@ const TarotWork: React.FC = () => {
       </main>
 
       {!card && !loading && !error && (
-        <div className="text-center p-6 bg-amber-50 rounded-xl border border-amber-200 mt-6 max-w-xs">
-          <p className="text-base text-amber-700">
+        <div className="text-center p-6 bg-slate-50 rounded-xl border border-slate-200 mt-6 max-w-xs">
+          <p className="text-base text-slate-700">
             ไพ่ทาโรต์เชื่อมโยงกับดวงชะตาของคุณ
           </p>
-          <p className="text-base text-amber-700">โปรดตั้งจิตก่อนกดเปิดไพ่</p>
+          <p className="text-base text-slate-700">โปรดตั้งจิตก่อนกดเปิดไพ่</p>
         </div>
       )}
     </div>

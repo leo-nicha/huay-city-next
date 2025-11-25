@@ -141,7 +141,7 @@ const TarotMoney: React.FC = () => {
   }, [hasDrawnToday, startCountdown]);
 
   return (
-<div className="w-full max-w-6xl bg-linear-to-b from-yellow-200 to-yellow-100 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
+<div className="w-full max-w-6xl bg-linear-to-b from-yellow-100 to-yellow-100 flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
       <header className="text-center mb-6 w-full">
         <h1 className="text-xl md:text-4xl font-extrabold text-yellow-700 font-serif mb-2">
           ไพ่ทำนายการเงิน
