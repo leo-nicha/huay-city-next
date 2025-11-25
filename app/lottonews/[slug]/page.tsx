@@ -2,21 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLottoDataBySlug } from "@/lib/getLottoData";
+import { getLottoNewsBySlug } from "@/lib/getLottoNews";
 
-interface LottoDataItem {
-  data: number;
+interface LottoNewsItem {
+  news: number;
   header: string;
   content: string[];
   slug: string;
 }
 
-export default function LottoDataDetail() {
+export default function LottoNewsDetail() {
   const { slug } = useParams();
-  const [item, setItem] = useState<LottoDataItem | null>(null);
+  const [item, setItem] = useState<LottoNewsItem | null>(null);
 
   useEffect(() => {
-    const data = getLottoDataBySlug(slug as string);
+    const data = getLottoNewsBySlug(slug as string);
     setItem(data);
   }, [slug]);
 

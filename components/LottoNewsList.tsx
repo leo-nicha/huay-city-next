@@ -1,22 +1,23 @@
 "use client";
 
-import ContentItem from "@/app/components/cards/ContentItem";
 import { useRouter } from "next/navigation";
+import ContentItem from "@/app/components/cards/ContentItem";
 
-interface LottoEnvelopeItem {
-title: string;
-    slug: string;
-    subtitle: string;
-    imageUrl: string;
-    description: string;
-    luckyImageUrl: string;
+interface LottoNewsItem {
+  news: number;
+  header: string;
+  slug: string;
+  imageUrl: string;
+  title: string;
+  subtitle: string;
+  content: string[];
 }
 
-export default function LottoEnvelopeList({ items }: { items: LottoEnvelopeItem[] }) {
+export default function LottoNewsList({ items }: { items: LottoNewsItem[] }) {
   const router = useRouter();
 
   const handleItemClick = (slug: string) => {
-    router.push(`/lottoenvelope/${slug}`);
+    router.push(`/lottonews/${slug}`);
   };
 
   return (
@@ -27,7 +28,8 @@ export default function LottoEnvelopeList({ items }: { items: LottoEnvelopeItem[
             <ContentItem
               key={item.slug}
               title={item.title}
-              subtitle={item.subtitle}
+              subtitle={
+                item.subtitle}
               imageUrl={item.imageUrl}
               onClick={() => handleItemClick(item.slug)}
             />

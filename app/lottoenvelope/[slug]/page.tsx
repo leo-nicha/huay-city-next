@@ -11,7 +11,7 @@ interface LottoEnvelopeItem {
   luckyImageUrl: string;
 }
 
-export default function LottoAnalyzeDetail() {
+export default function LottoEnvelopeDetail() {
   const { slug } = useParams();
   const [content, setContent] = useState<LottoEnvelopeItem | null>(null);
 
