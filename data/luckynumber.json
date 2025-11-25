@@ -22,6 +22,29 @@
     "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763545841/chaophopakdaeng_bhu415.jpg",
     "description": "",
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763548646/chaophopakdaeng011225_ia0iog.jpg"
-
+  },
+  {
+    "title": "ม้าสีหมอก",
+    "slug": "masimok",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764081666/masimok_a9om6g.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764081665/masimok011225_udhf5e.jpg"
+  },
+  {
+    "title": "เสือตกถังพลังเงินดี",
+    "slug": "tigerfallingtank",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764082353/tigerfallingtank_r30d4h.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764082352/Tigerfallingtank011225_gby2kg.jpg"
+  },
+  {
+    "title": "เลขปฏิทินจีน",
+    "slug": "chinesecalander",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084772/chinesecalander_vhumca.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084773/chinesecalander011225_qbdllr.jpg"
   }
 ]

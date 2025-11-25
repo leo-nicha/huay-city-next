@@ -30,7 +30,7 @@ export default function LottoNewsDetail() {
   return (
     <div className="w-full max-w-6xl bg-linear-to-b from-amber-50 to-white flex flex-col items-center p-4 font-sans mx-auto min-h-screen">
       <div className="text-center mb-6 w-full">
-        <h1 className="text-xl md:text-3xl font-extrabold text-red-700 font-serif mb-4">{item.header}</h1>
+        <h1 className="text-xl md:text-3xl font-extrabold text-red-700 font-serif mb-4 max-w-6xl pl-25 pr-25">{item.header}</h1>
           <div className="space-y-2 text-gray-800">
             {item.content.map((line, index) => (
               <div
