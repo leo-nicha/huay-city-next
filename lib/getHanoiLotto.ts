@@ -1,9 +1,12 @@
-import data from "../data/hanoilotto.json";
+import data from "../data/hanoilottoresult.json";
 
-export function getAllHanoiLotto() {
+export function getAllHanoiLottoResult() {
   return data;
 }
 
-export function getHanoiLottoBySlug(slug: string) {
-  return data.find((item) => item.slug === slug) || null;
+export function getHanoiType(type: "special" | "normal" | "vip") {
+  return data.map((item) => ({
+    date: item.date,
+    ...item.hanoi_lottery[type],
+  }));
 }

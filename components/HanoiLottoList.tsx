@@ -3,19 +3,31 @@
 import ContentItem from "@/app/components/cards/ContentItem";
 import { useRouter } from "next/navigation";
 
-interface HanoiLottoItem {
-  title: string;
-  slug: string;
-  subtitle: string;
-  imageUrl: string;
-  description: string;
-  luckyImageUrl: string;
-}
+const items = [
+  {
+    title: "ฮานอยพิเศษ",
+    slug: "special",
+    subtitle: "พฤศจิกายน 2568",
+    imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultspecial_kthrgq.jpg",
+  },
+  {
+    title: "ฮานอยปกติ",
+    slug: "normal",
+    subtitle: "พฤศจิกายน 2568",
+    imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181966/hanoilottoresultnormal_zpoaik.jpg",
+  },
+  {
+    title: "ฮานอย VIP",
+    slug: "vip",
+    subtitle: "พฤศจิกายน 2568",
+    imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultvip_dpjkuj.jpg",
+  },
+];
 
-export default function HanoiLottoList({ items }: { items: HanoiLottoItem[] }) {
+export default function HanoiLottoList() {
   const router = useRouter();
 
-  const handleItemClick = (slug: string) => {
+  const handleClick = (slug: string) => {
     router.push(`/hanoilotto/${slug}`);
   };
 
@@ -29,7 +41,7 @@ export default function HanoiLottoList({ items }: { items: HanoiLottoItem[] }) {
               title={item.title}
               subtitle={item.subtitle}
               imageUrl={item.imageUrl}
-              onClick={() => handleItemClick(item.slug)}
+              onClick={() => handleClick(item.slug)}
             />
           ))}
         </div>
