@@ -1,9 +1,9 @@
-import data from "../data/laoslotto.json";
+import data from "../data/laoslottoresult.json";
 
 export function getAllLaosLotto() {
-  return data;
+  return data[0].draws;
 }
 
-export function getLaosLottoBySlug(slug: string) {
-  return data.find((item) => item.slug === slug) || null;
+export function getLaosLottoByDate(date: string) {
+  return data[0].draws.find((d) => d.date === date) || null;
 }
