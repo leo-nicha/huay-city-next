@@ -181,7 +181,6 @@ export default function LottoChecker() {
         {/* Result Section */}
         {resultData && (
           <div className="w-full max-w-5xl mx-auto mt-5">
-
             <div className="text-center mb-6">
               <p className="font-bold text-2xl md:text-4xl text-red-500 mb-6">
                 <span className="mr-5">รางวัลที่ 1</span>

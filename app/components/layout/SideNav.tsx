@@ -12,7 +12,7 @@ const tabs = [
   { id: "lottochecker", icon: <ScanSearch />, label: "ตรวจหวย" },
   { id: "laoslotto", icon: <Mail />, label: "หวยลาว" },
   { id: "hanoilotto", icon: <ChartNoAxesCombined />, label: "ฮานอย" },
-  { id: "yeekeelotto", icon: <ListOrdered />, label: "หวยยี่กี" },
+  { id: "otherlotto", icon: <ListOrdered />, label: "หวยอื่นๆ" },
   { id: "horoscope", icon: <Clover />, label: "ดูดวง" },
   { id: "lottoonline", icon: <Globe />, label: "เร็วๆ นี้" }
 ];
