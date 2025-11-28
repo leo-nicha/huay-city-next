@@ -8,6 +8,14 @@
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763547718/luckynaga011225_jgketi.jpg"
   },
   {
+    "title": "แม่น้ำหนึ่ง",
+    "slug": "meanumone",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone_ertkch.jpg",
+    "description": "",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone011225_q6ygo4.jpg"
+  },
+  {
     "title": "ทักษามหาโชค",
     "slug": "taksamahachok",
     "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
@@ -40,12 +48,36 @@
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764082352/Tigerfallingtank011225_gby2kg.jpg"
   },
   {
+    "title": "อ.ปักธงชัย",
+    "slug": "pakthongchai",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764308049/pakthongchai_jxmjlr.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.2sq88.webp"
+  },
+  {
     "title": "เลขปฏิทินจีน",
     "slug": "chinesecalander",
     "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
     "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084772/chinesecalander_vhumca.jpg",
     "description": "",
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084773/chinesecalander011225_qbdllr.jpg"
+  },
+  {
+    "title": "เจาะใจลุงหวัง",
+    "slug": "unclewang",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764307444/unclewang_dgcqet.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.21vwc.webp"
+  },
+    {
+    "title": "ยอดอาจารย์ดัง",
+    "slug": "arjanyod",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764308399/arjanyod_gvxaix.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.5d385.webp"
   },
   {
     "title": "แม่นมาก ขั้นเทพ",
@@ -56,12 +88,12 @@
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763552717/mannmakkhanthep011225_ozath5.jpg"
   },
   {
-    "title": "แม่น้ำหนึ่ง",
-    "slug": "meanumone",
+    "title": "เลขกำลังวัน",
+    "slug": "daypowernumber",
     "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
-    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone_ertkch.jpg",
-    "description": "",
-    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764083768/meanumone011225_q6ygo4.jpg"
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562227/lottoanalyze_xgf22b.jpg",
+    "description": "เลขกำลัง ประจำวันจันทร์ 2 - 9 - 1 - 4 - 6 - 5 - 7 - 0 เลขเด่นคือเลข 2 เลขท้าย 2 ตัว 29, 17, 65, 54, 66, 16, 75, 26, 72, 47",
+    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562226/dailypowernumber011225_rwlpnr.jpg"
   },
   {
     "title": "หวยใบแดง",
@@ -70,6 +102,14 @@
     "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084556/huaybaidaeng_huq6ve.jpg",
     "description": "",
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764084555/huaybaidaeng011225_hg0j56.jpg"
+  },
+    {
+    "title": "นิตยสารลาภลอย",
+    "slug": "richmagazine",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764308603/richmagazine_tu5v6q.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.6u1v4.webp"
   },
   {
     "title": "อาม่าให้ลาภ",
@@ -80,11 +120,19 @@
     "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763554079/amahailap011225_ggjskx.jpg"
   },
   {
-    "title": "เลขกำลังวัน",
-    "slug": "daypowernumber",
+    "title": "โค้งสุดท้าย",
+    "slug": "finalcurve",
     "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
-    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562227/lottoanalyze_xgf22b.jpg",
-    "description": "เลขกำลัง ประจำวันจันทร์ 2 - 9 - 1 - 4 - 6 - 5 - 7 - 0 เลขเด่นคือเลข 2 เลขท้าย 2 ตัว 29, 17, 65, 54, 66, 16, 75, 26, 72, 47",
-    "luckyImageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1763562226/dailypowernumber011225_rwlpnr.jpg"
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764306871/finalcurve_njzcai.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.1ndvr.webp"
+  },
+  {
+    "title": "อาจารย์หนู",
+    "slug": "arjanrat",
+    "subtitle": "งวดวันที่ 1 ธันวาคม 2568",
+    "imageUrl": "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764306263/arjanrat_zx2egh.jpg",
+    "description": "",
+    "luckyImageUrl": "https://us-fbcloud.net/wb/data/1657/1657502-img.xklc9f.qwwx.webp"
   }
 ]
