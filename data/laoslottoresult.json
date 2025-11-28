@@ -4,6 +4,21 @@
     "year": 2025,
     "month": 11,
     "draws": [
+            {
+        "date": "26-11-2025",
+        "subtitle": "พฤศจิกายน 2568",
+        "four_digit": "5541",
+        "three_digit_top": "541",
+        "two_digit_top": "41",
+        "zodiac_animal": "ปลาเล็ก",
+        "additional_numbers": [
+          "41",
+          "09",
+          "08",
+          "16",
+          "15"
+        ]
+      },
       {
         "date": "24-11-2025",
         "subtitle": "พฤศจิกายน 2568",

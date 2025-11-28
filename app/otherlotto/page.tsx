@@ -6,20 +6,28 @@ import ContentItem from "../components/cards/ContentItem";
 
 const HoroscopeList: React.FC = () => {
   const items = [
-    { 
-      title: "สลาก ธ.ก.ส.", 
-      subtitle: "16 พฤศจิกายน 2568", 
-      slug: "torkorsor", 
-      imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg" 
+    {
+      title: "สลาก ธ.ก.ส.",
+      subtitle: "16 พฤศจิกายน 2568",
+      slug: "torkorsor",
+      date: "2025-11-16",
+      imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg"
+    },
+    {
+      title: "สลากออมสิน",
+      subtitle: "16 พฤศจิกายน 2568",
+      slug: "aomsin",
+      date: "2025-11-16",
+      imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg"
     },
     // เพิ่มรายการอื่นได้ตรงนี้
   ];
 
   const router = useRouter();
 
-  const handleItemClick = (slug: string) => {
-    router.push(`/otherlotto/${slug}`);
-  };
+const handleItemClick = (slug: string, date: string) => {
+  router.push(`/otherlotto/${slug}?date=${date}`);
+};
 
   return (
     <div className="bg-gray-100 min-h-screen lg:flex lg:justify-center">
@@ -31,7 +39,7 @@ const HoroscopeList: React.FC = () => {
               title={item.title}
               subtitle={item.subtitle}
               imageUrl={item.imageUrl}
-              onClick={() => handleItemClick(item.slug)}
+              onClick={() => handleItemClick(item.slug, item.date)}
             />
           ))}
         </div>
