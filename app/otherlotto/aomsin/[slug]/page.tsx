@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import { Loader2 } from "lucide-react";
 
 const API_URL = "https://gsb-lotto-api.vercel.app/api";
@@ -34,11 +35,10 @@ interface LottoData {
   prizes: Record<string, PrizeGroup>;
 }
 
-export default function Page() {
+export default function AomsinPage() {
+  const { slug } = useParams(); // dynamic slug จาก URL
   const [data, setData] = useState<LottoData | null>(null);
   const [loading, setLoading] = useState(true);
-
-  const slug = "aomsin";
 
   useEffect(() => {
     async function fetchData() {
@@ -47,7 +47,7 @@ export default function Page() {
         const json = await res.json();
 
         if (Array.isArray(json) && json.length > 0) {
-          setData(json[0]); // API ส่งเป็น array
+          setData(json[0]); // API ส่ง array
         } else {
           setData(null);
         }
@@ -60,7 +60,7 @@ export default function Page() {
     }
 
     fetchData();
-  }, []);
+  }, [slug]);
 
   if (loading) {
     return (
@@ -102,9 +102,9 @@ export default function Page() {
   );
 }
 
-/* =========================================
-   Component แสดงกลุ่มรางวัลครบทุกกรณี
-========================================= */
+/* ===============================
+   Component แสดงกลุ่มรางวัล
+================================= */
 function PrizeGroupCard({ prize }: { prize: PrizeGroup }) {
   const { title, items, numbers, total_groups, reward, winners } = prize;
 
@@ -124,7 +124,7 @@ function PrizeGroupCard({ prize }: { prize: PrizeGroup }) {
         </p>
       )}
 
-      {/* กรณี items (มี period, code, number) */}
+      {/* กรณี items (period, code, number) */}
       {items && (
         <div className="mt-4 space-y-3">
           {items.map((it, index) => (
@@ -138,7 +138,7 @@ function PrizeGroupCard({ prize }: { prize: PrizeGroup }) {
         </div>
       )}
 
-      {/* กรณีกลุ่ม total_groups เช่น เลขท้าย 3 ตัว */}
+      {/* กรณี total_groups เช่น เลขท้าย 3 ตัว */}
       {total_groups && (
         <div className="mt-4 space-y-3">
           {total_groups.map((g, i) => (

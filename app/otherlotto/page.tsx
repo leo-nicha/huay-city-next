@@ -4,30 +4,43 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import ContentItem from "../components/cards/ContentItem";
 
-const HoroscopeList: React.FC = () => {
+const OtherLottoList: React.FC = () => {
+  const router = useRouter();
+
   const items = [
     {
       title: "สลาก ธ.ก.ส.",
       subtitle: "16 พฤศจิกายน 2568",
-      slug: "torkorsor",
+      slug: "torkorsor161125",
+      folder: "torkorsor",
       date: "2025-11-16",
-      imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg"
+      imageUrl:
+        "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg",
     },
     {
       title: "สลากออมสิน",
       subtitle: "16 พฤศจิกายน 2568",
-      slug: "aomsin",
+      slug: "aomsin161125",
+      folder: "aomsin",
       date: "2025-11-16",
-      imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg"
+      imageUrl:
+        "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg",
+    },
+    {
+      title: "สลาก ธ.ก.ส.",
+      subtitle: "16 ตุลาคม 2568",
+      slug: "torkorsor161025",
+      folder: "torkorsor",
+      date: "2025-10-16",
+      imageUrl:
+        "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg",
     },
     // เพิ่มรายการอื่นได้ตรงนี้
   ];
 
-  const router = useRouter();
-
-const handleItemClick = (slug: string, date: string) => {
-  router.push(`/otherlotto/${slug}?date=${date}`);
-};
+  const handleItemClick = (folder: string, slug: string) => {
+    router.push(`/otherlotto/${folder}/${slug}`);
+  };
 
   return (
     <div className="bg-gray-100 min-h-screen lg:flex lg:justify-center">
@@ -39,7 +52,7 @@ const handleItemClick = (slug: string, date: string) => {
               title={item.title}
               subtitle={item.subtitle}
               imageUrl={item.imageUrl}
-              onClick={() => handleItemClick(item.slug, item.date)}
+              onClick={() => handleItemClick(item.folder, item.slug)}
             />
           ))}
         </div>
@@ -48,4 +61,4 @@ const handleItemClick = (slug: string, date: string) => {
   );
 };
 
-export default HoroscopeList;
+export default OtherLottoList;
