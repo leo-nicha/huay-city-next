@@ -8,9 +8,14 @@ const OtherLottoList: React.FC = () => {
   const router = useRouter();
 
   const items = [
-    { title: "สลาก ธ.ก.ส.", subtitle: "16 พฤศจิกายน 2568", slug: "torkorsor161125", folder: "torkorsor", date: "2025-11-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg", },
     { title: "สลากออมสิน", subtitle: "16 พฤศจิกายน 2568", slug: "aomsin161125", folder: "aomsin", date: "2025-11-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg", },
+    { title: "สลาก ธ.ก.ส.", subtitle: "16 พฤศจิกายน 2568", slug: "torkorsor161125", folder: "torkorsor", date: "2025-11-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg", },
+    { title: "สลากออมสิน", subtitle: "16 ตุลาคม 2568", slug: "aomsin161025", folder: "aomsin", date: "2025-10-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg", },
     { title: "สลาก ธ.ก.ส.", subtitle: "16 ตุลาคม 2568", slug: "torkorsor161025", folder: "torkorsor", date: "2025-10-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg", },
+    { title: "สลากออมสิน", subtitle: "16 กันยายน 2568", slug: "aomsin160925", folder: "aomsin", date: "2025-09-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg", },
+    { title: "สลาก ธ.ก.ส.", subtitle: "16 กันยายน 2568", slug: "torkorsor160925", folder: "torkorsor", date: "2025-09-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg", },
+    { title: "สลากออมสิน", subtitle: "16 สิงหาคม 2568", slug: "aomsin160825", folder: "aomsin", date: "2025-08-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/aomsinlotto_yauwqt.jpg", },
+    { title: "สลาก ธ.ก.ส.", subtitle: "16 สิงหาคม 2568", slug: "torkorsor160825", folder: "torkorsor", date: "2025-08-16", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764224877/torkorsorlotto_pd3usp.jpg", },
     // เพิ่มรายการอื่นได้ตรงนี้
   ];
 

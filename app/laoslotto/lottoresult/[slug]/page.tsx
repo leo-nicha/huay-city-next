@@ -2,7 +2,9 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getLaosLottoByDate } from "@/lib/getLaosLotto";
+import { Loader2 } from "lucide-react";
+
+const API_URL = "https://laos-lotto-api.vercel.app/api";
 
 interface LaosLottoDraw {
   date: string;
@@ -17,27 +19,54 @@ interface LaosLottoDraw {
 export default function LaosLottoDetail() {
   const { slug } = useParams();
   const [draw, setDraw] = useState<LaosLottoDraw | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const result = getLaosLottoByDate(slug as string);
-    setDraw(result);
+    async function fetchData() {
+      try {
+        const res = await fetch(`${API_URL}`);
+        const json = await res.json();
+
+        const data = Array.isArray(json) ? json[0]?.draws ?? [] : [];
+
+        const result = data.find((d: LaosLottoDraw) => d.date === slug);
+
+        setDraw(result ?? null);
+      } catch (err) {
+        console.error("Error fetching Laos Lotto:", err);
+        setDraw(null);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchData();
   }, [slug]);
 
-  if (!draw)
+  if (loading) {
     return (
-      <div className="p-4 text-center text-red-500">
+      <div className="min-h-screen flex justify-center items-center">
+        <Loader2 className="h-8 w-8 animate-spin text-red-600" />
+      </div>
+    );
+  }
+
+  if (!draw) {
+    return (
+      <div className="p-4 text-center text-red-500 text-xl">
         ไม่พบข้อมูลประจำวันที่: {slug}
       </div>
     );
+  }
 
   return (
-    <div className=" flex justify-center">
+    <div className="flex justify-center">
       <div className="w-full max-w-2xl shadow-xl p-4 sm:p-6 border border-gray-300 bg-white">
         <h1 className="text-xl sm:text-2xl font-bold text-red-600 text-center mb-6">
           ผลหวยลาว {draw.date}
         </h1>
 
-        {/* ผลรางวัล */}
+        {/* 🟥 กล่องผลรางวัล */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-gray-100">
 
           {/* เลขท้าย 4 ตัว */}
@@ -52,7 +81,7 @@ export default function LaosLottoDetail() {
             </div>
           </div>
 
-          {/* กล่องเลข 3 / 2 ตัว + นามสัตว์ */}
+          {/* เลขท้าย 3 / 2 ตัว + นามสัตว์ */}
           <div className="border border-gray-300 flex flex-col">
 
             <div className="bg-gray-200 border-b border-gray-300 py-2 text-center text-sm font-semibold text-gray-700">
