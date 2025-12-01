@@ -8,6 +8,7 @@ const LaosLottoList: React.FC = () => {
   const router = useRouter();
 
   const items = [
+    { title: "หวยลาว 28-11-68", subtitle: "พฤศจิกายน 2568", slug: "28-11-2025", folder: "lottoresult", date: "28-11-2025", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764149027/laoslottoresult_yyws7l.jpg", },
     { title: "หวยลาว 26-11-68", subtitle: "พฤศจิกายน 2568", slug: "26-11-2025", folder: "lottoresult", date: "26-11-2025", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764149027/laoslottoresult_yyws7l.jpg", },
     { title: "หวยลาว 24-11-68", subtitle: "พฤศจิกายน 2568", slug: "24-11-2025", folder: "lottoresult", date: "24-11-2025", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764149027/laoslottoresult_yyws7l.jpg", },
     { title: "หวยลาว 21-11-68", subtitle: "พฤศจิกายน 2568", slug: "21-11-2025", folder: "lottoresult", date: "21-11-2025", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764149027/laoslottoresult_yyws7l.jpg", },
