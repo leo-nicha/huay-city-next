@@ -9,9 +9,9 @@ const HanoiLottoPage: React.FC = () => {
 
 
   const items = [
-    { title: "หวยฮานอยพิเศษ", subtitle: "พฤศจิกายน 2568", slug: "special", folder: "lottoresult", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultspecial_kthrgq.jpg", },
-    { title: "หวยฮานอยปกติ", subtitle: "พฤศจิกายน 2568", slug: "normal", folder: "lottoresult", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181966/hanoilottoresultnormal_zpoaik.jpg", },
-    { title: "หวยฮานอย VIP", subtitle: "พฤศจิกายน 2568", slug: "vip", folder: "lottoresult", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultvip_dpjkuj.jpg", },
+    { title: "ฮานอยพิเศษ", subtitle: "พฤศจิกายน 2568", slug: "special", folder: "lottoresult1125", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultspecial_kthrgq.jpg", },
+    { title: "ฮานอยปกติ", subtitle: "พฤศจิกายน 2568", slug: "normal", folder: "lottoresult1125", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181966/hanoilottoresultnormal_zpoaik.jpg", },
+    { title: "ฮานอย VIP", subtitle: "พฤศจิกายน 2568", slug: "vip", folder: "lottoresult1125", imageUrl: "https://res.cloudinary.com/dvv3wvgnt/image/upload/v1764181967/hanoilottoresultvip_dpjkuj.jpg", },
   ];
 
   const handleItemClick = (folder: string, slug: string) => {
