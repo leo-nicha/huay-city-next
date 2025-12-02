@@ -21,7 +21,7 @@ const CalanderList: React.FC = () => {
     <div className="bg-gray-100 min-h-screen lg:flex lg:justify-center">
       <div className="bg-gray-100 min-h-screen lg:min-w-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 pl-2 pr-2 pt-4 mx-auto max-w-6xl">
-          {items.map((item) => (
+          {/* {items.map((item) => (
             <ContentItem
               key={item.title}
               title={item.title}
@@ -29,7 +29,7 @@ const CalanderList: React.FC = () => {
               imageUrl={item.imageUrl}
               onClick={() => handleItemClick(item.title)}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
