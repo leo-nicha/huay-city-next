@@ -21,8 +21,8 @@ export default function SideNav() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // active tab จาก URL เช่น /luckynumber → "luckynumber"
-  const activeTab = pathname.split("/")[1] || "luckynumber";
+  const firstPath = pathname.split("/")[1];
+  const activeTab = firstPath === "" ? null : firstPath;
 
   const changeTab = (tab: string) => {
     router.push(`/${tab}`);
