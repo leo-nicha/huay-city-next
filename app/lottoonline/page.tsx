@@ -53,8 +53,9 @@ export default function CalendarList() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen p-2">
-      <div className="max-w-7xl mx-auto p-2 sm:p-6 lg:p-8">
+<div className="bg-gray-100 min-h-screen lg:flex lg:justify-center">
+      <div className="bg-gray-100 min-h-screen lg:min-w-screen ">
+        <div className=" gap-2 pl-2 pr-2 pt-4 mx-auto max-w-6xl bg-gray-100 ">
 
         {/* ส่วนบน (VIP) */}
         <div className="mb-3">
@@ -123,6 +124,7 @@ export default function CalendarList() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }

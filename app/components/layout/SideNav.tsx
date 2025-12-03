@@ -3,15 +3,15 @@
 import { useRouter, usePathname } from "next/navigation";
 import SideNavItem from "./SideNavItem";
 import {
-  Clover, Star, ScanSearch, Mail, House, ListOrdered,
-  Globe, Tv, ChartNoAxesCombined
+  Clover, Star, ScanSearch, Binary, Coins, ListOrdered,
+  Globe
 } from "lucide-react";
 
 const tabs = [
   { id: "luckynumber", icon: <Star />, label: "เลขเด็ด" },
   { id: "lottochecker", icon: <ScanSearch />, label: "ตรวจหวย" },
-  { id: "laoslotto", icon: <Mail />, label: "หวยลาว" },
-  { id: "hanoilotto", icon: <ChartNoAxesCombined />, label: "ฮานอย" },
+  { id: "laoslotto", icon: <Coins />, label: "หวยลาว" },
+  { id: "hanoilotto", icon: <Binary />, label: "ฮานอย" },
   { id: "otherlotto", icon: <ListOrdered />, label: "หวยอื่นๆ" },
   { id: "horoscope", icon: <Clover />, label: "ดูดวง" },
   { id: "lottoonline", icon: <Globe />, label: "เร็วๆ นี้" }
