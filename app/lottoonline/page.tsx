@@ -55,7 +55,7 @@ export default function CalendarList() {
   return (
 <div className="bg-gray-100 min-h-screen lg:flex lg:justify-center">
       <div className="bg-gray-100 min-h-screen lg:min-w-screen ">
-        <div className=" gap-2 pl-2 pr-2 pt-4 mx-auto max-w-6xl bg-gray-100 ">
+        <div className=" gap-2 pl-2 pr-2 pt-4 mx-auto max-w-3xl bg-gray-100 ">
 
         {/* ส่วนบน (VIP) */}
         <div className="mb-3">
