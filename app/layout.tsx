@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import Header from "./components/layout/Header";
 import SideNav from "./components/layout/SideNav";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <main className="flex-1 overflow-y-auto pl-24 lg:p-8 flex flex-col mt-12 lg:mt-25 bg-gray-100 min-h-screen w-full">
             {children}
+            <Analytics />
           </main>
         </div>
       </body>
