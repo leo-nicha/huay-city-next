@@ -22,8 +22,8 @@ const Header: React.FC = () => {
           {/* - 15s: คือความเร็ว (15 วินาที) - คุณสามารถปรับเลขนี้ได้ */}
           {/* - linear: ให้ความเร็วคงที่ */}
           {/* - infinite: ให้วนซ้ำไปเรื่อยๆ */}
-          <div className="whitespace-nowrap animate-[marquee_15s_linear_infinite]">
-            ยินดีต้อนรับสู่ HUAY เลขเด็ด เลขดัง รวยปัง ทุกงวด
+          <div className="whitespace-nowrap animate-[marquee_20s_linear_infinite]">
+            ยินดีต้อนรับเข้าสู่ HUAY CITY - หวยซิตี้ แหล่งรวมข่าวสารและข้อมูลเกี่ยวกับหวยทุกประเภท
           </div>
         </div>
       </div>

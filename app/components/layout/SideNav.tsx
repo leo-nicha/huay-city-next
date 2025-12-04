@@ -14,7 +14,7 @@ const tabs = [
   { id: "hanoilotto", icon: <Binary />, label: "ฮานอย" },
   { id: "otherlotto", icon: <ListOrdered />, label: "หวยอื่นๆ" },
   { id: "horoscope", icon: <Clover />, label: "ดูดวง" },
-  { id: "lottoonline", icon: <Globe />, label: "เร็วๆ นี้" }
+  { id: "lottoonline", icon: <Globe />, label: "เล่นหวย" }
 ];
 
 export default function SideNav() {
